@@ -1,6 +1,8 @@
-﻿namespace ProjectI.Service
+﻿using ProjectI.Interfaces;
+
+namespace ProjectI.Service
 {
-    public class BlowfishService
+    public class BlowfishService : IBlowfishService
     {
     }
 }
