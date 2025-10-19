@@ -1,11 +1,24 @@
-﻿using System.Security.Cryptography;
+﻿using Org.BouncyCastle.Crypto;
+using Org.BouncyCastle.Crypto.Parameters;
+using Org.BouncyCastle.Security;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace ProjectI.Structure_Class
 {
     public class Encrypt_Class
     {
+        public string Encrypt(string plainText, string password)
+        {
+            if (plainText == null)
+                throw new ArgumentNullException(nameof(plainText));
+            if (string.IsNullOrWhiteSpace(password))
+                throw new ArgumentNullException(nameof(password));
 
+           
+
+            return Convert.ToBase64String(result);
+        }
         private byte[] DeriveKey(string password)
         {
             using (var sha256 = SHA256.Create())
