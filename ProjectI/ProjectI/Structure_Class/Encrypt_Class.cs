@@ -15,7 +15,20 @@ namespace ProjectI.Structure_Class
             if (string.IsNullOrWhiteSpace(password))
                 throw new ArgumentNullException(nameof(password));
 
-           
+            byte[] keyBytes = DeriveKey(password);
+            byte[] iv = GenerateRandomBytes(BlockSize);
+
+            // BF = Blowfish, CBC = Cipher Block Chaining, PKCS7 = padding
+            IBufferedCipher cipher = CipherUtilities.GetCipher("BF/CBC/PKCS7");
+            cipher.Init(true, new ParametersWithIV(new KeyParameter(keyBytes), iv));
+
+            byte[] inputBytes = Encoding.UTF8.GetBytes(plainText);
+            byte[] encryptedBytes = cipher.DoFinal(inputBytes);
+
+            // Ruajmë IV në fillim të stream-it (IV + ciphertext)
+            byte[] result = new byte[iv.Length + encryptedBytes.Length];
+            Buffer.BlockCopy(iv, 0, result, 0, iv.Length);
+            Buffer.BlockCopy(encryptedBytes, 0, result, iv.Length, encryptedBytes.Length);
 
             return Convert.ToBase64String(result);
         }
