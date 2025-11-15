@@ -8,8 +8,8 @@ namespace ProjectI.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class BlowfishController : ControllerBase
-    {  
-       [HttpPost("encrypt")]
+    {
+        [HttpPost("encrypt")]
         public async Task<ActionResult<CryptoResponseModel>> Encrypt([FromBody] EncryptRequestModel req)
         {
             try

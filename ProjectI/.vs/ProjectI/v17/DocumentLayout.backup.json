@@ -46,17 +46,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "BlowfishController.cs",
               "DocumentMoniker": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Controllers\\BlowfishController.cs",
               "RelativeDocumentMoniker": "ProjectI\\Controllers\\BlowfishController.cs",
-              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Controllers\\BlowfishController.cs*",
-              "RelativeToolTip": "ProjectI\\Controllers\\BlowfishController.cs*",
-              "ViewState": "AgIAACQAAAAAAAAAAAAqwEAAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Controllers\\BlowfishController.cs",
+              "RelativeToolTip": "ProjectI\\Controllers\\BlowfishController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T17:22:15.3Z",
               "EditorCaption": ""
@@ -83,8 +87,7 @@
               "RelativeToolTip": "ProjectI\\Service\\BlowfishService.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T17:06:27.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-15T17:06:27.188Z"
             },
             {
               "$type": "Document",
@@ -157,10 +160,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-11-09T21:02:31.213Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
