@@ -505,23 +505,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PULSE Electronics\\.nuget\\packages\\": {},
+    "C:\\Users\\Erand Kurtaliqi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\ProjectI.csproj",
+      "projectUniqueName": "C:\\Users\\Erand Kurtaliqi\\OneDrive\\Desktop\\Master\\Information Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\ProjectI.csproj",
       "projectName": "ProjectI",
-      "projectPath": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\ProjectI.csproj",
-      "packagesPath": "C:\\Users\\PULSE Electronics\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\obj\\",
+      "projectPath": "C:\\Users\\Erand Kurtaliqi\\OneDrive\\Desktop\\Master\\Information Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\ProjectI.csproj",
+      "packagesPath": "C:\\Users\\Erand Kurtaliqi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Erand Kurtaliqi\\OneDrive\\Desktop\\Master\\Information Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\PULSE Electronics\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Erand Kurtaliqi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -548,7 +548,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -586,7 +586,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

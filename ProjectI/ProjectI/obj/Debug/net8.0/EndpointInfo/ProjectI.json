@@ -5,6 +5,102 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Blowfish/encrypt": {
+      "post": {
+        "tags": [
+          "Blowfish"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EncryptRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EncryptRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EncryptRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CryptoResponseModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CryptoResponseModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CryptoResponseModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Blowfish/decrypt": {
+      "post": {
+        "tags": [
+          "Blowfish"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DecryptRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DecryptRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DecryptRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/CryptoResponseModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CryptoResponseModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CryptoResponseModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -47,6 +143,58 @@
   },
   "components": {
     "schemas": {
+      "CryptoResponseModel": {
+        "type": "object",
+        "properties": {
+          "result": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DecryptRequestModel": {
+        "required": [
+          "cipherBase64"
+        ],
+        "type": "object",
+        "properties": {
+          "cipherBase64": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "keyBase64": {
+            "type": "string",
+            "nullable": true
+          },
+          "ivHex": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EncryptRequestModel": {
+        "required": [
+          "plaintext"
+        ],
+        "type": "object",
+        "properties": {
+          "plaintext": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "keyBase64": {
+            "type": "string",
+            "nullable": true
+          },
+          "ivHex": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "WeatherForecast": {
         "type": "object",
         "properties": {

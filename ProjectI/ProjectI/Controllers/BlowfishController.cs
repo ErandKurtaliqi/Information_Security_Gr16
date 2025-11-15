@@ -9,6 +9,14 @@ namespace ProjectI.Controllers
     [ApiController]
     public class BlowfishController : ControllerBase
     {
+        private readonly IConfiguration _config;
+        private readonly IBlowfishService _svc;
+        public BlowfishController(IBlowfishService svc, IConfiguration config)
+        {
+            _svc = svc;
+            _config = config;
+        }
+
         [HttpPost("encrypt")]
         public async Task<ActionResult<CryptoResponseModel>> Encrypt([FromBody] EncryptRequestModel req)
         {
@@ -16,6 +24,7 @@ namespace ProjectI.Controllers
             {
                 string result;
 
+                // nëse useri nuk ka dërguar key/iv, merre nga appsettings
                 var keyBase64 = string.IsNullOrWhiteSpace(req.KeyBase64)
                     ? _config["Blowfish:KeyBase64"]
                     : req.KeyBase64;
@@ -38,7 +47,6 @@ namespace ProjectI.Controllers
                 return Problem($"Encrypt error: {ex.Message}");
             }
         }
-
 
         [HttpPost("decrypt")]
         public async Task<ActionResult<CryptoResponseModel>> Decrypt([FromBody] DecryptRequestModel req)
@@ -65,5 +73,15 @@ namespace ProjectI.Controllers
             }
         }
 
+        private static byte[] HexToBytes(string hex)
+        {
+            if (hex.Length % 2 != 0) throw new ArgumentException("Hex me gjatësi çift pritet.");
+            byte[] bytes = new byte[hex.Length / 2];
+            for (int i = 0; i < bytes.Length; i++)
+                bytes[i] = Convert.ToByte(hex.Substring(i * 2, 2), 16);
+            return bytes;
+        }
+
     }
+
 }
