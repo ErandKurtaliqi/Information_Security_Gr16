@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|c:\\users\\pulse electronics\\desktop\\information_security\\information_security_gr16\\projecti\\projecti\\controllers\\blowfishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|solutionrelative:projecti\\controllers\\blowfishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|c:\\users\\pulse electronics\\desktop\\information_security\\information_security_gr16\\projecti\\projecti\\service\\blowfishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|solutionrelative:projecti\\service\\blowfishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|c:\\users\\pulse electronics\\desktop\\information_security\\information_security_gr16\\projecti\\projecti\\interfaces\\iblowfishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|solutionrelative:projecti\\interfaces\\iblowfishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|c:\\users\\pulse electronics\\desktop\\information_security\\information_security_gr16\\projecti\\projecti\\structure_class\\decrypt_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|solutionrelative:projecti\\structure_class\\decrypt_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|c:\\users\\pulse electronics\\desktop\\information_security\\information_security_gr16\\projecti\\projecti\\structure_class\\encrypt_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|solutionrelative:projecti\\structure_class\\encrypt_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|c:\\users\\pulse electronics\\desktop\\information_security\\information_security_gr16\\projecti\\projecti\\structure_model\\encrypt_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|solutionrelative:projecti\\structure_model\\encrypt_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|c:\\users\\pulse electronics\\desktop\\information_security\\information_security_gr16\\projecti\\projecti\\structure_model\\decrypt_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|solutionrelative:projecti\\structure_model\\decrypt_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|c:\\users\\pulse electronics\\desktop\\information_security\\information_security_gr16\\projecti\\projecti\\structure_model\\request_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|solutionrelative:projecti\\structure_model\\request_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|c:\\users\\pulse electronics\\desktop\\information_security\\information_security_gr16\\projecti\\projecti\\projecti.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E792E8CF-B731-4C2A-9001-C511B5F4FBA5}|ProjectI\\ProjectI.csproj|solutionrelative:projecti\\projecti.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlowfishController.cs",
+              "DocumentMoniker": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Controllers\\BlowfishController.cs",
+              "RelativeDocumentMoniker": "ProjectI\\Controllers\\BlowfishController.cs",
+              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Controllers\\BlowfishController.cs",
+              "RelativeToolTip": "ProjectI\\Controllers\\BlowfishController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAqwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T17:22:15.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IBlowfishService.cs",
+              "DocumentMoniker": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Interfaces\\IBlowfishService.cs",
+              "RelativeDocumentMoniker": "ProjectI\\Interfaces\\IBlowfishService.cs",
+              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Interfaces\\IBlowfishService.cs",
+              "RelativeToolTip": "ProjectI\\Interfaces\\IBlowfishService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T17:07:28.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BlowfishService.cs",
+              "DocumentMoniker": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Service\\BlowfishService.cs",
+              "RelativeDocumentMoniker": "ProjectI\\Service\\BlowfishService.cs",
+              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Service\\BlowfishService.cs",
+              "RelativeToolTip": "ProjectI\\Service\\BlowfishService.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T17:06:27.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Decrypt_Class.cs",
+              "DocumentMoniker": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Structure_Class\\Decrypt_Class.cs",
+              "RelativeDocumentMoniker": "ProjectI\\Structure_Class\\Decrypt_Class.cs",
+              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Structure_Class\\Decrypt_Class.cs",
+              "RelativeToolTip": "ProjectI\\Structure_Class\\Decrypt_Class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T10:38:19.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Encrypt_Class.cs",
+              "DocumentMoniker": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Structure_Class\\Encrypt_Class.cs",
+              "RelativeDocumentMoniker": "ProjectI\\Structure_Class\\Encrypt_Class.cs",
+              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Structure_Class\\Encrypt_Class.cs",
+              "RelativeToolTip": "ProjectI\\Structure_Class\\Encrypt_Class.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAACAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T10:21:17.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Decrypt_model.cs",
+              "DocumentMoniker": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Structure_model\\Decrypt_model.cs",
+              "RelativeDocumentMoniker": "ProjectI\\Structure_model\\Decrypt_model.cs",
+              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Structure_model\\Decrypt_model.cs",
+              "RelativeToolTip": "ProjectI\\Structure_model\\Decrypt_model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T10:16:32.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Encrypt_model.cs",
+              "DocumentMoniker": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Structure_model\\Encrypt_model.cs",
+              "RelativeDocumentMoniker": "ProjectI\\Structure_model\\Encrypt_model.cs",
+              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Structure_model\\Encrypt_model.cs",
+              "RelativeToolTip": "ProjectI\\Structure_model\\Encrypt_model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T10:15:57.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Request_model.cs",
+              "DocumentMoniker": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Structure_model\\Request_model.cs",
+              "RelativeDocumentMoniker": "ProjectI\\Structure_model\\Request_model.cs",
+              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\Structure_model\\Request_model.cs",
+              "RelativeToolTip": "ProjectI\\Structure_model\\Request_model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T21:03:41.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProjectI.csproj",
+              "DocumentMoniker": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\ProjectI.csproj",
+              "RelativeDocumentMoniker": "ProjectI\\ProjectI.csproj",
+              "ToolTip": "C:\\Users\\PULSE Electronics\\Desktop\\Information_Security\\Information_Security_Gr16\\ProjectI\\ProjectI\\ProjectI.csproj",
+              "RelativeToolTip": "ProjectI\\ProjectI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-09T21:02:31.213Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

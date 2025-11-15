@@ -38,5 +38,32 @@ namespace ProjectI.Controllers
                 return Problem($"Encrypt error: {ex.Message}");
             }
         }
+
+
+        [HttpPost("decrypt")]
+        public async Task<ActionResult<CryptoResponseModel>> Decrypt([FromBody] DecryptRequestModel req)
+        {
+            try
+            {
+                string result;
+                if (!string.IsNullOrWhiteSpace(req.KeyBase64) && !string.IsNullOrWhiteSpace(req.IVHex))
+                {
+                    var key = Convert.FromBase64String(req.KeyBase64);
+                    var iv = HexToBytes(req.IVHex);
+                    if (iv.Length != 8) return BadRequest("IV duhet 8 bajte (16 hexdigjit).");
+                    result = await _svc.DecryptFromBase64Async(req.CipherBase64, key, iv);
+                }
+                else
+                {
+                    result = await _svc.DecryptFromBase64Async(req.CipherBase64);
+                }
+                return Ok(new CryptoResponseModel { Result = result });
+            }
+            catch (Exception ex)
+            {
+                return Problem($"Decrypt error: {ex.Message}");
+            }
+        }
+
     }
 }
