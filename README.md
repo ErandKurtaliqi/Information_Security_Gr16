@@ -19,95 +19,77 @@ Ky projekt implementon dekriptimin e tekstit duke përdorur algoritmin **Blowfis
 
 ---
 
-Përshkrimi i Përgjithshëm
+## Përshkrimi i Përgjithshëm
 
 Ky projekt paraqet një implementim të plotë dhe profesional të algoritmit Blowfish për enkriptim dhe dekriptim të të dhënave brenda një API-je të zhvilluar me ASP.NET Core (.NET 8). Blowfish është një algoritëm simetrik i bllokut, i njohur për shpejtësinë dhe thjeshtësinë e tij, si dhe për fleksibilitetin në madhësinë e çelësave (deri në 448 bit).
 
 Ky implementim fokusohet në ofrimin e një shërbimi të sigurt, të konfigurueshëm dhe praktik për aplikacionet që kërkojnë mbrojtje të të dhënave përmes enkriptimit. Përmes këtij projekti, është krijuar një API moderne që lejon:
 
-🔐 Enkriptim Blowfish
+### Enkriptim Blowfish
 
 API-ja konverton çdo plaintext në ciphertext duke përdorur:
 
-CBC (Cipher Block Chaining) mode – rrit sigurinë duke përdorur një IV unik për çdo enkriptim.
+- **CBC (Cipher Block Chaining) mode** – rrit sigurinë duke përdorur një IV unik për çdo enkriptim.
+- **PKCS7 Padding** – garanton që ciphertext të jetë gjithmonë i plotë sa i përket madhësisë së bllokut.
+- **Çelësa dinamikë ose statikë** – përdoruesi mund të dërgojë key & IV manualisht ose mund të përdoren ato të përcaktuara në konfigurim.
 
-PKCS7 Padding – garanton që ciphertext të jetë gjithmonë i plotë sa i përket madhësisë së bllokut.
-
-Çelësa dinamikë ose statikë – përdoruesi mund të dërgojë key & IV manualisht ose mund të përdoren ato të përcaktuara në konfigurim.
-
-🔓 Dekriptim Blowfish
+### Dekriptim Blowfish
 
 API-ja mundëson rikthimin e ciphertext-it (në Base64) në tekst të lexueshëm, duke përdorur:
 
-Të njëjtin çelës dhe IV që janë përdorur gjatë enkriptimit
+- Të njëjtin çelës dhe IV që janë përdorur gjatë enkriptimit
+- Kontroll dhe trajtim të gabimeve për rastet kur çelësi është i pasaktë ose ciphertext është korruptuar
 
-Kontroll dhe trajtim të gabimeve për rastet kur çelësi është i pasaktë ose ciphertext është korruptuar
-
-⚙️ Konfigurim me IOptions
+### Konfigurim me IOptions
 
 Projekti përdor mekanizmin e integruar të ASP.NET Core për:
 
-leximin e konfigurimeve nga appsettings.json,
-
-injektimin e tyre te shërbimet,
-
-ruajtjen e KeyBase64 dhe IVHex në mënyrë të sigurt.
+- leximin e konfigurimeve nga `appsettings.json`
+- injektimin e tyre te shërbimet
+- ruajtjen e `KeyBase64` dhe `IVHex` në mënyrë të sigurt
 
 Kjo bën të mundur:
 
-ndryshimin e çelësave pa modifikuar kodin,
+- ndryshimin e çelësave pa modifikuar kodin  
+- përdorimin e konfigurimeve të ndryshme për Development, Staging, Production
 
-përdorimin e konfigurimeve të ndryshme për Development, Staging, Production.
-
-🌐 API REST
+### API REST
 
 Projekti ekspozon dy endpoint-e kryesore:
 
-1️⃣ POST /api/blowfish/encrypt
-
+#### POST `/api/blowfish/encrypt`
 Pranon tekst të thjeshtë dhe kthen ciphertext të enkriptuar në Base64.
 
-2️⃣ POST /api/blowfish/decrypt
-
+#### POST `/api/blowfish/decrypt`
 Pranon ciphertext të koduar në Base64 dhe e kthen në plaintext.
 
-Karakteristikat e përbashkëta të endpoint-eve:
+**Karakteristikat e përbashkëta:**
 
-mbështesin parametrat opsionalë (keyBase64, ivHex),
+- mbështesin parametrat opsionalë (`keyBase64`, `ivHex`)
+- përdorin çelësat nga `appsettings.json` nëse nuk dërgohen në kërkesë
+- kthejnë përgjigje të standardizuara (`CryptoResponseModel`)
 
-përdorin çelësat nga appsettings.json nëse nuk dërgohen në kërkesë,
-
-kthejnë përgjigje të standardizuara (CryptoResponseModel).
-
-🔑 Mbështetje për Çelësa Statikë ose Dinamikë
+### Mbështetje për Çelësa Statikë ose Dinamikë
 
 Përdoruesi ka fleksibilitet të plotë:
 
-Çelësa statikë – të konfiguruar paraprakisht dhe të njëjtë për çdo kërkesë
+- **Çelësa statikë** – të konfiguruar paraprakisht dhe të njëjtë për çdo kërkesë  
+- **Çelësa dinamikë** – dërgohen për çdo kërkesë në JSON
 
-Çelësa dinamikë – dërgohen për çdo kërkesë në JSON, duke rritur kontrollin dhe sigurinë për raste specifike
+E përshtatshme për:
 
-Kjo e bën API-n të përshtatshme për:
+- sisteme enkriptimi brenda aplikacioneve ekzistuese
+- integrime me shërbime të jashtme
+- testime me çelësa të ndryshëm
 
-sisteme enkriptimi brenda aplikacioneve ekzistuese,
-
-integrime me shërbime të jashtme,
-
-testime dhe experimentime me çelësa të ndryshëm.
-
-🛡️ Validime dhe Error Handling i Integruar
+### Validime dhe Error Handling i Integruar
 
 Projekti përmban:
 
-validim të input-eve me [Required],
-
-validim të formateve (Base64, HEX, madhësia e çelësit),
-
-trajtim të gabimeve përmes Problem(...),
-
-mesazhe të qarta gabimesh për përdoruesit.
-
-Kjo e bën API-n shumë të qëndrueshme edhe ndaj input-eve të pavlefshme.
+- validim të input-eve me `[Required]`
+- validim të formateve (Base64, HEX, madhësia e çelësit)
+- trajtim të gabimeve përmes `Problem(...)`
+- mesazhe të qarta gabimesh për përdoruesit
 
 ---
 
