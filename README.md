@@ -237,7 +237,6 @@ builder.Services.AddScoped<IBlowfishService, BlowfishService>();
 
 <img width="384" height="535" alt="image" src="https://github.com/user-attachments/assets/21889f3f-b698-42e8-8109-0bed7a3042a1" />
 
-```
 ---
 
 ## # Testimi përmes Swagger
