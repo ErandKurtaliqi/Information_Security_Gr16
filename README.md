@@ -1,6 +1,6 @@
-# Blowfish Encryption/Decryption API – Dokumentacioni i Projektit
+# Blowfish Decryption API – Dokumentacioni i Projektit
 
-Ky projekt implementon enkriptimin dhe dekriptimin e tekstit duke përdorur algoritmin **Blowfish** në .NET. Përdor **CBC mode**, **PKCS7 padding**, çelësa në **Base64**, dhe **IV në HEX**. Ofron endpoint-e REST për enkriptim dhe dekriptim, validime të forta dhe konfigurim fleksibël.
+Ky projekt implementon dekriptimin e tekstit duke përdorur algoritmin **Blowfish** në .NET. Përdor **CBC mode**, **PKCS7 padding**, çelësa në **Base64**, dhe **IV në HEX**. Ofron endpoint-e REST për enkriptim dhe dekriptim, validime të forta dhe konfigurim fleksibël.
 
 ---
 
@@ -23,7 +23,7 @@ Ky projekt implementon enkriptimin dhe dekriptimin e tekstit duke përdorur algo
 
 Projekti përfshin:
 
-* Enkriptim Blowfish (CBC + PKCS7)
+* Enkriptim Blowfish 
 * Dekriptim Blowfish
 * Konfigurim me `IOptions`
 * API REST:
@@ -233,12 +233,49 @@ builder.Services.AddScoped<IBlowfishService, BlowfishService>();
 
 ---
 
+## # Struktura e Projektit
+
+<img width="384" height="535" alt="image" src="https://github.com/user-attachments/assets/21889f3f-b698-42e8-8109-0bed7a3042a1" />
+
+```
+---
+
+## # Testimi përmes Swagger
+
+<img width="1194" height="864" alt="image" src="https://github.com/user-attachments/assets/e3521156-33ee-423e-87de-688c61381b9a" />
+
+Swagger auto–gjenerohet nga ASP.NET Core dhe ofron testimin e drejtpërdrejtë të endpoint-eve.
+
+<img width="1103" height="919" alt="image" src="https://github.com/user-attachments/assets/722f5b90-2a2c-4524-9b3a-a0d58d587170" />
+
+Për të dekriptuar një tekst si në foto ne duhet ta kemi keyBase64 dhe ivHex, por pasi që  kemi enkriptuar pa këto paraprakisht të cakuara, programi siguron një keyBase64 dhe një ivHex, me të cilat enkriptojm dhe pastaj kemi përdorur të njëjtat për dekriptim.
+
+### Shembull – Dekriptimi (`POST /api/blowfish/decrypt`)
+
+**Body minimal:**
+
+```json
+{
+  "cipherBase64": "BASE64_CIPHER_KETU"
+}
+```
+
+**Përgjigja:**
+
+```json
+{
+  "result": "Teksti i dekriptuar këtu"
+}
+```
+
+---
+
 ## # Përfundim
 
 Ky projekt ofron:
 
-* Enkriptim & dekriptim Blowfish në mënyrë profesionale
+* Dekriptim Blowfish në mënyrë profesionale
 * API të thjeshtë dhe të sigurt
 * Mbështetje për çelësa statikë dhe dinamikë
-* Validime të forta
-* Kod të pastër dhe të mirëstrukturuar
+* Validime të forta dhe error–handling korrekt
+* Kod të pastër dhe të mirëstrukturuar, me mundësi zgjerimi në të ardhmen
