@@ -4,7 +4,7 @@ Ky projekt implementon dekriptimin e tekstit duke përdorur algoritmin **Blowfis
 
 ---
 
-## 📌 Përmbajtja
+## Përmbajtja
 
 * Përshkrimi i Përgjithshëm
 * Konfigurimi
@@ -19,7 +19,7 @@ Ky projekt implementon dekriptimin e tekstit duke përdorur algoritmin **Blowfis
 
 ---
 
-## # Përshkrimi i Përgjithshëm
+## Përshkrimi i Përgjithshëm
 
 Projekti përfshin:
 
@@ -35,7 +35,7 @@ Projekti përfshin:
 
 ---
 
-## # Konfigurimi
+## Konfigurimi
 
 ```csharp
 public class BlowfishOptions
@@ -49,7 +49,7 @@ Këto vlera lexohen përmes `IOptions<BlowfishOptions>`.
 
 ---
 
-## # BlowfishService
+## BlowfishService
 
 `BlowfishService` përmban implementimin e algoritmit dhe përdor:
 
@@ -82,7 +82,7 @@ Metodat pa parametra përdorin vlerat në konfigurim.
 
 ---
 
-## # API Controller
+## API Controller
 
 `BlowfishController` përmban dy endpoint-e:
 
@@ -98,7 +98,7 @@ Nëse në kërkesë nuk dërgohet `KeyBase64` dhe `IVHex`, përdoren ato nga kon
 
 ---
 
-## # Modelet
+## Modelet
 
 ### EncryptRequestModel
 
@@ -133,9 +133,9 @@ public class CryptoResponseModel
 
 ---
 
-## # Përdorimi i API
+## Përdorimi i API
 
-### 🔐 Enkriptimi
+### Enkriptimi
 
 **POST /api/blowfish/encrypt**
 
@@ -167,7 +167,7 @@ public class CryptoResponseModel
 
 ---
 
-### 🔓 Dekriptimi
+### Dekriptimi
 
 **POST /api/blowfish/decrypt**
 
@@ -199,7 +199,7 @@ public class CryptoResponseModel
 
 ---
 
-## # Validimet dhe Siguria
+## Validimet dhe Siguria
 
 * **IV = 8 bajte** (16 HEX chars)
 * **Çelësi Blowfish = 4–56 bajte**
@@ -209,7 +209,7 @@ public class CryptoResponseModel
 
 ---
 
-## # Regjistrimi i Shërbimit (Program.cs)
+## Regjistrimi i Shërbimit (Program.cs)
 
 ```csharp
 builder.Services.Configure<BlowfishOptions>(
@@ -220,7 +220,7 @@ builder.Services.AddScoped<IBlowfishService, BlowfishService>();
 
 ---
 
-## # Shembull i appsettings.json
+## Shembull i appsettings.json
 
 ```json
 {
@@ -233,13 +233,13 @@ builder.Services.AddScoped<IBlowfishService, BlowfishService>();
 
 ---
 
-## # Struktura e Projektit
+## Struktura e Projektit
 
 <img width="384" height="535" alt="image" src="https://github.com/user-attachments/assets/21889f3f-b698-42e8-8109-0bed7a3042a1" />
 
 ---
 
-## # Testimi përmes Swagger
+## Testimi përmes Swagger
 
 <img width="1194" height="864" alt="image" src="https://github.com/user-attachments/assets/e3521156-33ee-423e-87de-688c61381b9a" />
 
@@ -269,7 +269,7 @@ Për të dekriptuar një tekst si në foto ne duhet ta kemi keyBase64 dhe ivHex,
 
 ---
 
-## # Përfundim
+## Përfundim
 
 Ky projekt ofron:
 
